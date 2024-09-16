@@ -1,0 +1,154 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* height: 100vh; */
+    
+}
+
+nav{
+    width:100%;
+    height:50px;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+
+}
+
+.nav{
+    margin:auto;
+    /* background-color: white; */
+    width:70%;
+    height: 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+
+.nav_links{
+    display: flex;
+    width:600px;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.nav_links li{
+    list-style-type: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.nav_links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #222222;
+}
+.nav_links li:hover{
+    color: red;
+
+}
+
+.nav_icons{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.icon{
+    width:20px;
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #AAC6FC;
+    padding-top: 50px;
+    margin: auto;
+    width: 50%;
+    border-radius: 10%;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center input{
+    padding:10px;
+    width:90%;
+}
+
+.center input:hover{
+   border: 2px solid;
+   border:2px solid #0e2045;
+}
+
+.gap{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    /* background-color: white; */
+}
+
+.sel_opt{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+select{
+    padding:10px;
+    border: 2px solid  #152a540e;
+}
+
+select:hover{
+    border: 2px solid  #0e2045;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn button{
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+.btn button:hover{
+    border: 1px solid #3bbf3bba;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #0e2045;
+    color: white;
+}
+
+
+h1{
+    color: rgba(0, 0, 0, 0.814);
+}
+
+.section_content{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+
+

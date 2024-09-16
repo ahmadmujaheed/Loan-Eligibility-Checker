@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <div><h1>Logo</h1></div>
+            <div class="nav_links">
+                <li>home</li>
+                <li>loan products</li>
+                <li>features</li>
+                <li>pages</li>
+                <li>registration</li>
+                <div class="nav_icons">
+                    <img src="./image/icon/search-interface-symbol.png" class="icon">
+                    <img src="./image/icon/gear.png" class="icon">
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <h1>CHECK YOUR LAON ELIGIBILITY</h1>
+        <form id="myform">
+            <div class="gap">
+                <div class="center">
+                    <input type="number" name="" id="current_balance" placeholder="current amount in account"/>
+                    <span id="curr_err"></span>
+                </div>
+
+                <div class="center">
+                    <input type="number" name="" id="loan_amount" placeholder="loan_amount"/>
+                    <span id="loan_err"></span>
+                </div>
+            </div>
+            <div class="sel_opt">
+                <select id="month_history">
+                    <option value="">What is your 6 month credit history</option>
+                    <option value="paid">Paid</option>
+                    <option value="not_paid">Not Paid</option>
+                </select>
+
+                <select id="last_deposit_date">
+                    <option value="">Last Deposit Date</option>
+                    <option value="within">Within 1 Month</option>
+                    <option value="above">Above 1 Month</option>
+                    <option value="below">Below 1 Month</option>
+                </select>
+
+                <select id="collection_date">
+                    <option value="">Last Loan collection date</option>
+                    <option value="within">Within 6 Month</option>
+                    <option value="above">Above 6 Month</option>
+                    <option value="below">Below 6 Month</option>    
+                </select>
+
+                <select id="repayment_period">
+                    <option value="">Loan Repayment Period</option>
+                    <option value="within">Within 6 Month</option>
+                    <option value="above">Above 6 Month</option>
+                    <option value="below">Below 6 Month</option>
+                </select>
+
+                <select id="acc_type">
+                    <option value="">Select an option</option>
+                    <option value="current">Current</option>
+                    <option value="savings">Savings</option>
+                </select>
+            </div>
+            <div class="btn">
+                <button type="button" onclick="validate()">Submit</button>
+            </div> 
+        </form>
+
+        <h1 id="result"></h1>
+    </section>
+
+    <footer>
+        <div class="section_item">
+            <div class="section_content">
+                <div>
+                    <h1>Logo</h1>
+                    <!-- <img src="./image/logo.png" alt="logo">  -->
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="section_icon">
+                    <img src="./image/icon/facebook-app-symbol.png" alt="" class="icon">
+                    <img src="./image/icon/google-plus-logo.png" alt="" class="icon">
+                    <img src="./image/icon/twitter.png" alt="" class="icon">
+                    <img src="./image/icon/instagram.png" alt="" class="icon">
+                    <img src="./image/icon/wifi-signal.png" alt="" class="icon">
+                </div>
+            </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
